@@ -1,0 +1,34 @@
+//main: ../style.less
+
+.header{
+    padding: 1.2rem 0;
+    position: absolute;
+    top: 0;
+left: 0;
+right: 0;
+z-index: 1000;
+width: 100%;
+    
+    &.fixed{
+/*    тінь*/
+    box-shadow: 0 5px 10px rgb(34, 10, 44);
+/*    тінь*/    
+
+    padding: 10px 0;
+    background-color:#1a052e;;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+/*    щоб меню не дригалося при скролі*/
+    transform: translate3d(0, 0, 0);
+}
+}
+
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

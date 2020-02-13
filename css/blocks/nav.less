@@ -1,0 +1,94 @@
+//main: ../style.less
+
+.nav {
+    
+    display: flex;
+    height: 100%;
+    align-items: center;
+    
+    
+   
+    
+
+
+    @media @900 {
+        display: none;
+        box-shadow: 0 7px 12px rgba(0, 0, 0, 0.2);
+        position: absolute;
+        right: 0;
+        top: 100%;
+        flex-direction: column;
+        width: 100%;
+        text-align: right;
+        background-color:
+            #210b2f;;
+        height: auto;
+        padding: 0.5rem 1rem 0.5rem;
+        z-index: 2;
+        align-items: flex-end;
+        
+        
+        &.show{
+            display: flex;
+        }
+    }
+}
+
+.nav__link {
+    margin-left: 2rem;
+    font-size: 0.93rem;
+    color: @white;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    position: relative;
+    
+     @media @notebook{
+        margin-left: 1rem;
+    }
+    
+    
+    @media @900 {
+        margin-bottom: 0.5rem;
+        
+        &--btn{
+            display: none;
+        }
+    }
+
+
+    &:after {
+        content: "";
+        width: 0;
+        height: 2px;
+        background-color: @white;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        z-index: 1;
+
+        transition: width 0.2s linear;
+    }
+
+
+
+    &:hover:not(.nav__link--btn) {
+        &:after {
+            width: 100%;
+        }
+    }
+
+
+    &--btn {
+        padding: 0.66rem 2rem;
+        border: 2px solid @white;
+        border-radius: 20px;
+
+        transition: background-color 0.2s linear, color 0.2s linear;
+
+        &:hover {
+            background-color: #493359;;
+        
+        }
+    }
+}

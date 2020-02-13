@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Marck+Script|Spectral:200,200i,300,300i,400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+
+<body>
+
+
+    <!--Header-->
+
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="user">
+                    <div class="user__avatar">
+                        <a href="#"> <img src="img/depositphotos_76682785-stock-illustration-photographer-icon.jpg" alt=""> </a>
+                    </div>
+                    <div class="user__content">
+                        <div class="user__name">Константин <br> Шевчук </div>
+                        <div class="user__prof">Ваш фотограф </div>
+                    </div>
+                </div>
+                <nav class="nav" id="nav">
+                    <a class="nav__link" href="#" data-scroll="#work">Галерея</a>
+                    <a class="nav__link" href="#" data-scroll="#about me">обо мне</a>
+                    <a class="nav__link" href="#" data-scroll="#cost">стоимость</a>
+                    <a class="nav__link" href="#" data-scroll="#news">новости</a>
+                    <a class="nav__link nav__link--btn modal-btn" data-modal="#modal_hire_me" href="#">свяжитесь со мной</a>
+                </nav>
+
+                <div class="burger" id="navToggle">
+                    <img class="burger__icon" src="img/menu.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <!--      Intro  -->
+
+    <section class="intro">
+        <div class="container">
+
+            <div class="intro__inner">
+                <div class="intro__content">
+                    <h2 class="intro__subtitle">Профессиональный фотограф,</h2>
+                    <h1 class="intro__title">Константин Шевчук</h1>
+                    <div class="intro__text">Давайте вместе создавать <br> уникальную фотоисторию для Вас!</div>
+
+                </div>
+
+            </div>
+            <!--intro__inner-->
+
+        </div>
+        <!--container-->
+    </section>
+
+
+    <!--works-->
+    <div class="works" id="work">
+        <div class="container">
+            <div class="works__nav">
+                <a href="#" class="works__nav-link" data-filter="all">Портфолио</a>
+                <a href="#" class="works__nav-link" data-filter="wedding">Свадьба</a>
+                <a href="#" class="works__nav-link" data-filter="newyear">Новый год</a>
+                <a href="#" class="works__nav-link" data-filter="lovestory">LoveStory</a>
+                <a href="#" class="works__nav-link" data-filter="baby">Дети</a>
+            </div>
+
+            <div class="portfolio">
+                <div class="portfolio__col" data-cat="wedding">
+                    <div class="work">
+                        <img class="work__img" src="img/wed1.jpg" alt="">
+                        <div class="work__content">
+                            <div class="work__title">
+                                Анна и Дмитрий
+                                <time class="work__date" datetime="2019-11-22 19:00">2018</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio__col" data-cat="baby">
+                    <div class="work" data-modal="#modal_project_1">
+                        <img class="work__img" src="img/baby.jpg" alt="">
+                        <div class="work__content">
+                            <div class="work__title">
+                                Маленький ангелочек
+                                <time class="work__date" datetime="2019-11-22 19:00">2020</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio__col" data-cat="newyear">
+                    <div class="work" data-modal="#modal_project_1">
+                        <img class="work__img" src="img/new-year-4826498_1920.jpg" alt="">
+                        <div class="work__content">
+                            <div class="work__title">
+                                Новый год
+                                <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio__col" data-cat="baby">
+                    <div class="work" data-modal="#modal_project_1">
+                        <img class="work__img" src="img/baby1.jpg" alt="">
+                        <div class="work__content">
+                            <div class="work__title">
+                                Сладкий сон
+                                <time class="work__date" datetime="2019-11-22 19:00">2020</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio__col" data-cat="newyear">
+                    <div class="work">
+                        <img class="work__img" src="img/new-years-2.jpg" alt="">
+                        <div class="work__content">
+                            <div class="work__title">
+                                Новогодняя мечта
+                                <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio__col" data-cat="lovestory">
+                    <div class="work">
+                        <img class="work__img" src="img/love1.jpg" alt="">
+                        <div class="work__content">
+                            <div class="work__title">
+                                Романтика
+                                <time class="work__date" datetime="2019-11-22 19:00">2017</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio__col" data-cat="lovestory">
+                    <div class="work">
+                        <img class="work__img" src="img/love2.jpg" alt="">
+                        <div class="work__content">
+                            <div class="work__title">
+                                История любви
+                                <time class="work__date" datetime="2019-11-22 19:00">2019</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio__col" data-cat="wedding">
+                    <div class="work">
+                        <img class="work__img" src="img/wed12.jpg" alt="">
+                        <div class="work__content">
+                            <div class="work__title">
+                                Диана и Алексей
+                                <time class="work__date" datetime="2019-11-22 19:00">2016</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio__col" data-cat="wedding">
+                    <div class="work">
+                        <img class="work__img" src="img/wed13.jpg" alt="">
+                        <div class="work__content">
+                            <div class="work__title">
+                                Натали
+                                <time class="work__date" datetime="2019-11-22 19:00">2017</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="portfolio__col" data-cat="baby">
+                    <div class="work" data-modal="#modal_project_1">
+                        <img class="work__img" src="img/children.jpg" alt="">
+                        <div class="work__content">
+                            <div class="work__title">
+                                Дружба
+                                <time class="work__date" datetime="2019-11-22 19:00">2020</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio__col" data-cat="lovestory">
+                    <div class="work">
+                        <img class="work__img" src="img/love4.jpg" alt="">
+                        <div class="work__content">
+                            <div class="work__title">
+                                История любви
+                                <time class="work__date" datetime="2019-11-22 19:00">2016</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio__col" data-cat="lovestory">
+                    <div class="work">
+                        <img class="work__img" src="img/love3.jpg" alt="">
+                        <div class="work__content">
+                            <div class="work__title">
+                                Ольга и Петр
+                                <time class="work__date" datetime="2019-11-22 19:00">2015</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--portfolio-->
+
+        </div>
+        <!--container-->
+    </div>
+    <!--works-->
+
+
+    <!--about-->
+    <section class="about" id="about me">
+        <div class="container">
+            <div class="about__inner">
+                <div class="about__photo">
+                    <img class="img" src="img/photogr.jpg" alt="">
+                </div>
+                <div class="about__content">
+                    <h3 class="about__title">Давайте знакомиться</h3>
+
+                    <div class="about__text">
+                        <p> Привет! Меня зовут Константин Шевчук , живу и фотографирую в Украине. С 2008 года работаю фотографом на более чем 300 + свадьбах. Моя задача — создать воспоминания, которыми вы сможете гордиться. Вот уже 12 лет живу своей работой и занимаюсь свадебной фотографией, мне очень важно не превращать фотосъёмкку в конвейер. Мои фотографии искренние и простые. Фотографии которые я делаю легко смотреть и понимать — они вызывают улыбки и от них подымается настроение. Мое портфолио это ваши улыбки и эмоции, а фотографии воздушные и чистые, сняты так, чтобы быть в радость для вас. Они не для меня — они для вас, и про вас. Я не стремлюсь поразить моих коллег, и не трачу свое время на борьбу с конкурентами. Вместо этого я делаю фотографии, которые понравятся вам, вашим мамам, бабушкам, и самое главное — вашим детям))). Если вам по душе то, что я делаю, давайте вместе создавать уникальную фотоисторию!</p>
+                    </div>
+                    <a class="btn modal-btn" data-modal="#modal_hire_me" href="#">Свяжитесь со мной</a>
+                    <button class="btn modal-btn" data-modal="#modal_resume" type="button">мое резюме </button>
+                </div>
+                <!--about__content-->
+
+
+            </div>
+            <!--about__inner-->
+        </div>
+        <!--container-->
+    </section>
+
+   
+   
+    <!--cost-->
+    <section class="cost" id="cost">
+        <div class="container">
+
+            <div class="cost__title"> Стоимость фотосессии</div>
+            <div class="cost__condition">Пожалуйста, ознакомьтесь с моими условиями: фотосессия проходит в моей специализированной студии, где есть все необходимые температурные, световые условия и весь реквизит; оплата производится в день съёмки, по окончании работы; срок исполнения заказа два месяца со дня съёмки, без учета изготовления печатной продукции, заранее благодарю вас за ожидание!
+            </div>
+
+            <div class="cost__item">
+                <div class="cost__text">
+                    <div class="cost__text-title">PREMIUM 5999 грн.</div>
+                    <ul>
+                        <li> До 3х часов фотосессии </li>
+                        <li> 35 ретушированных цифровых файлов </li>
+                        <li> Изготовление фотокниги 15*15 на 5 разворотов </li>
+                        <li> Ожидание результата до 2 месяцев </li>
+                    </ul>
+
+                </div>
+
+                <div class="cost__text">
+                    <div class="cost__text-title">CLASSIC 3999 грн.</div>
+                    <ul>
+                        <li> До 2х часов фотосессии </li>
+                        <li> 25 ретушированных цифровых файлов </li>
+                        <li> Изготовление фотокниги 15*15 на 5 разворотов </li>
+                        <li> Ожидание результата до 2 месяцев </li>
+                    </ul>
+
+                </div>
+
+                <div class="cost__text">
+                    <div class="cost__text-title">STANDART 2599 грн.</div>
+                    <ul>
+                        <li> До 1.5 часа фотосессии </li>
+                        <li> 12 ретушированных цифровых файлов </li>
+                        <li> Ожидание результата до 2 месяцев </li>
+                    </ul>
+
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+        <!--container-->
+    </section>
+    <!--cost-->
+
+
+    <!--news-->
+    <section class="news" id="news">
+        <div class="container">
+            <div class="news__header">
+                <h3 class="news__title">Бесценные моменты Вашей жизни</h3>
+                <div class="news__text"></div>
+            </div>
+            <div class="articles">
+                <div class="articles__col">
+                    <div class="articles__item">
+                        <div class="articles__header">
+                            <time class="articles__data">Март <br> 2019</time>
+
+                            <img src="img/PET_1268.jpg" alt="" class="articles__photo">
+
+
+                        </div>
+                        <div class="articles__content">
+                            <h5 class="articles__title">
+                                фотографии новорожденных
+                            </h5>
+                            <div class="articles__cat work__cat">CATEGORY </div>
+                            <div class="articles__text about__text">
+                                <p>Эти первые дни с новорожденным такое особенное и незабываемое время. Это ваши первые моменты материнства, и они бесценны!</p>
+                            </div>
+                            <a href="#" class="btn btn--sm modal-btn" data-modal="#modal_project_1">Подробнее</a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="articles__col">
+                    <div class="articles__item">
+                        <div class="articles__header">
+                            <time class="articles__data">Декабрь <br> 2019</time>
+
+                            <img src="img/nastya.jpg" alt="" class="articles__photo">
+
+
+                        </div>
+                        <div class="articles__content">
+                            <h5 class="articles__title">
+                                новогодняя фотосессия
+                            </h5>
+                            <div class="articles__cat work__cat">CATEGORY </div>
+                            <div class="articles__text about__text">
+                                <p>Почему Новый год приходит 1 января, как придумали елочные игрушки.Давайте вместе с Вами узнаем все тайны Нового Года!</p>
+                            </div>
+                            <a href="#" class="btn btn--sm modal-btn" data-modal="#modal_project_2">Подробнее</a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="articles__col">
+                    <div class="articles__item">
+                        <div class="articles__header">
+                            <time class="articles__data">Август <br> 2018</time>
+
+                            <img src="img/wed.jpg" alt="" class="articles__photo">
+
+
+                        </div>
+                        <div class="articles__content">
+                            <h5 class="articles__title">
+                                Ах эта свадьба...
+                            </h5>
+                            <div class="articles__cat work__cat">CATEGORY </div>
+                            <div class="articles__text about__text">
+                                <p>Свадебная фотосессия...о ней мечтает каждая девочка, девушка, женщина...Подарите себе немного сказки!</p>
+                            </div>
+                            <a href="#" class="btn btn--sm modal-btn" data-modal="#modal_project_3">Подробнее</a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!--articles-->
+
+
+        </div>
+        <!--container-->
+
+    </section>
+
+
+    <!--Footer-->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+
+                <div class="footer__copyright">
+                    <p>Украина, г.Киев</p>
+                    <p>офис 222 ул.Краснова 35б</p>
+                    <p>тел. 0356984215</p>
+                    <p>Жду Ваших писем круглосуточно!</p>
+
+                </div>
+                <div>
+                    <a class="nav__link nav__link--btn modal-btn" data-modal="#modal_hire_me" href="#">свяжитесь со мной</a>
+                </div>
+
+                <div class="footer__social">
+
+
+                    <a class="social__link" href="#"><img class="social__link-icon" src="img/social/facebook.svg" alt=""></a>
+                    <a class="social__link" href="#"> <img class="social__link-icon"  src="img/social/instagram.svg" alt=""></a>
+                    <a class="social__link" href="#"> <img class="social__link-icon"  src="img/social/twitter.svg" alt=""></a>
+
+
+                </div>
+
+                <!--footer__credits-->
+
+
+
+            </div>
+
+        </div>
+    </footer>
+
+
+
+    <!--Modals-->
+    <div class="modal" id="modal_project_1">
+        <div class="modal__dialog">
+
+            <button type="button" class="modal__close" data-close>
+                <img class="modal__close-button" src="img/closewhite.svg" alt="">
+            </button>
+
+            <div class="modal-work">
+
+                <div class="modal-work__preview active">
+                    <img class="modal-work__photo" src="img/PET_1268.jpg" alt="">
+                </div>
+
+                <div class="modal-work__preview">
+                    <img class="modal-work__photo" src="img/PET_1291-Edit.jpg" alt="">
+                </div>
+
+                <div class="modal-work__preview">
+                    <img class="modal-work__photo" src="img/PET_1305.jpg" alt="">
+                </div>
+
+                <div class="modal-work__preview">
+                    <img class="modal-work__photo" src="img/PET_1521.jpg" alt="">
+                </div>
+
+                <div class="modal-work__preview">
+                    <img class="modal-work__photo" src="img/PET_1626.jpg" alt="">
+                </div>
+                
+                 <div class="modal-work__btns">
+                        <button class="btn-back" type="button">
+
+                            <img src="img/back.svg" height="12" alt="">
+                            Назад</button>
+                        <button class="btn-forward" type="button">
+                            Вперед
+                            <img src="img/next.svg" height="12" alt="">
+                        </button>
+                    </div>
+
+
+
+                <div class="modal-work__content">
+
+
+                    <div class="modal-work__text">
+                        <p>Фотосессии новорожденных являются идеальным способом, чтобы передать красоту, сладость и сильные эмоции этого особого времени, как вневременное искусство. Постановка и моделирование, опыт, освещение и редактирование - это самое главное для лучших детских и семейных портретов. Люблю фотографировать каждого из своих клиентов и создавать культуру семейной фотографии, искусство, которое будет заветным навсегда!
+                        </p>
+
+
+                    </div>
+
+                   
+                </div>
+
+            </div>
+            <!--modal__work-->
+
+        </div>
+        <!--modal__dialog-->
+    </div>
+    <!--modal-->
+
+
+    <div class="modal" id="modal_project_2">
+        <div class="modal__dialog">
+
+            <button type="button" class="modal__close" data-close>
+                <img class="modal__close-button" src="img/closewhite.svg" alt="">
+            </button>
+
+            <div class="modal-work">
+
+                <div class="modal-work__preview active">
+                    <img class="modal-work__photo" src="img/nastya2.jpg" alt="">
+                </div>
+
+                <div class="modal-work__preview">
+                    <img class="modal-work__photo" src="img/nastya.jpg" alt="">
+                </div>
+                
+                 <div class="modal-work__btns">
+                        <button class="btn-back" type="button">
+
+                            <img src="img/back.svg" height="12" alt="">
+                            Назад</button>
+                        <button class="btn-forward" type="button">
+                            Вперед
+                            <img src="img/next.svg" height="12" alt="">
+                        </button>
+                    </div>
+
+
+
+                <div class="modal-work__content">
+
+
+                    <div class="modal-work__text">
+                        Ваши маленькие почемучки уже интересовались, откуда взялся Новый год, почему он приходит 1 января, как придумали елочные игрушки.Мы собрали интересные факты о Нового годе и зиме.В Голландии детей поздравляет не Дед Мороз, а Синтерклаас. И делает он это не на Новый год, а в свой
+                            собственный день — 5 декабря. Накануне он прибывает на корабле из Испании, а потом скачет по крышам,заходит в дома через дымоход и оставляет в детской обуви подарки.
+                        По легенде, первые стеклянные елочные шары появились в 1848 году в Германии. До этого елки украшали
+                            настоящими шариками, но в том году случился неурожай. И тогда стеклодувы решили заменить плоды
+                            стеклянными, чтобы было что вешать на елку.
+                   
+
+
+
+                    </div>
+
+                   
+                </div>
+
+            </div>
+            <!--modal__work-->
+
+        </div>
+        <!--modal__dialog-->
+    </div>
+    <!--modal-->
+
+
+    <div class="modal" id="modal_project_3">
+        <div class="modal__dialog">
+
+            <button type="button" class="modal__close" data-close>
+                <img class="modal__close-button" src="img/closewhite.svg" alt="">
+            </button>
+
+            <div class="modal-work">
+
+                <div class="modal-work__preview active">
+                    <img class="modal-work__photo" src="img/wed11.jpg" alt="">
+                </div>
+
+                <div class="modal-work__preview">
+                    <img class="modal-work__photo" src="img/wed22.jpg" alt="">
+                </div>
+
+                <div class="modal-work__preview">
+                    <img class="modal-work__photo" src="img/wed33.jpg" alt="">
+                </div>
+                
+                 <div class="modal-work__btns">
+                        <button class="btn-back" type="button">
+
+                            <img src="img/back.svg" height="12" alt="">
+                            Назад</button>
+                        <button class="btn-forward" type="button">
+                            Вперед
+                            <img src="img/next.svg" height="12" alt="">
+                        </button>
+                    </div>
+
+
+
+                <div class="modal-work__content">
+                
+                
+
+
+                    <div class="modal-work__text">
+                        <p> Центр, смысл каждой свадьбы — девушка. Которая влюбилась в парня. Или девушка, которая влюбилась в девушку. Или парень, который вл … ну, вы меня поняли. Остальное вторично и несущественно. Пух, пыль, шелуха. Когда читаешь сегодняшние свадебные журналы и блоги, складывается впечатление, что свадьба — это платье, украшения, приглашения и миллион других вещей.</p>
+
+                        <p>Свадьбы — это истории о людях, о соединении и торжестве любви. Это о вас. Оттолкнитесь от этого — а все остальное приложится.</p>
+
+
+
+                    </div>
+
+                   
+                </div>
+
+            </div>
+            <!--modal__work-->
+
+        </div>
+        <!--modal__dialog-->
+    </div>
+    <!--modal-->
+
+
+
+
+    <div class="modal" id="modal_resume">
+        <div class="modal__dialog">
+
+            <button type="button" class="modal__close" data-close>
+                <img src="img/closewhite.svg" alt="">
+            </button>
+            <div class="modal__content">
+                <h3 class="modal__title text-center">Резюме</h3>
+
+                <div class="resume">
+                    <div class="resume__col resume__col--left">
+                        <h4 class="resume__title">Опыт работы</h4>
+                        
+                         <div class="resume__item">
+                            <time class="resume__date" datetime="11-21-2018">2019 - 2020</time>
+                            <h5 class="resume__subtitle">Преподаватель фотомастерства</h5>
+                            <h5 class="resume__position">Онлайн-курсы для начинающих фотографов, основы дизайна и графики.</h5>
+                            
+                        </div>
+
+                        <div class="resume__item">
+                            <time class="resume__date" datetime="11-21-2018">2017 - 2019</time>
+                            <h5 class="resume__subtitle">Фотограф</h5>
+                            <h5 class="resume__position">Арт Студия "Лимон"</h5>
+                            
+                        </div>
+                        
+                         <div class="resume__item">
+                            <time class="resume__date" datetime="11-21-2018">2016 - 2017</time>
+                            <h5 class="resume__subtitle">Фотограф</h5>
+                            <h5 class="resume__position">Арт Студия "Сияние"</h5>
+                            
+                        </div>
+                        
+                         <div class="resume__item">
+                            <time class="resume__date" datetime="11-21-2018">2016 - 2017</time>
+                            <h5 class="resume__subtitle">Ассистент фотографа</h5>
+                            <h5 class="resume__position">Фотостудия "Мама и младенец"</h5>
+                            
+                        </div>
+
+                    </div>
+                    <div class="resume__col resume__col--right">
+                        <h4 class="resume__title ">Образование</h4>
+
+                        <div class="resume__item">
+                            <time class="resume__date" datetime="11-21-2018">2005 - 2007</time>
+                            <h5 class="resume__subtitle">ЖГТУ</h5>
+                           
+                            
+
+                        </div>
+
+                        <div class="resume__item">
+                            <time class="resume__date" datetime="11-21-2018">2007 - 2010</time>
+                            <h5 class="resume__subtitle">Университет культуры им.Поплавского</h5>
+                            
+
+                        </div>
+
+
+                        <h4 class="resume__title">Профессиональные и другие навыки</h4>
+                        <div class="resume__item">
+                            
+                            <div class="resume__text">
+                                
+    <p>Навыки работы с компьютером,
+    графические и фоторедакторы: CorelDRAW, Adobe Photoshop, Adobe Lightroom,capture one, indesign</p>
+    <p>Видео редакторы: Adobe Premiere Pro, Sony Vegas.</p>
+    <p>Работа с оборудованием для сублимационной печати (1 год опыта)</p>
+    <p>Навык фото-видио съёмки, работа со студийным светом. (3 года опыта)</p>
+    
+
+                            </div>
+
+                        </div>
+
+                     
+
+                    </div>
+                </div>
+                <!--resume-->
+
+
+            </div>
+            <!--modal__content-->
+
+
+        </div>
+        <!--modal__dialog-->
+
+
+
+    </div>
+    <!--modal-->
+
+
+    <!--Modals-->
+    <div class="modal" id="modal_hire_me">
+        <div class="modal__dialog modal__dialog--sm">
+
+            <button type="button" class="modal__close" data-close>
+                <img src="img/closewhite.svg" alt="">
+            </button>
+
+            <div class="contact">
+                <div class="contact__left">
+                    <h3 class="modal__title modal__title--0">Свяжитесь со мной!</h3>
+                    <div class="modal__subtitle">Позвоните или напишите мне:</div>
+                    <ul class="contact__info">
+                        <li class="contact__info-item"> <img class="contact__info-icon" src="img/call.svg" alt=""> (200) 100 3000</li>
+                        <li class="contact__info-item"> <img class="contact__info-icon" src="img/mail.svg" alt=""> designer@ui43.com</li>
+                    </ul>
+
+                    <form action="/" method="post">
+                        <div class="form__group">
+                            <label class="form__label" for="input-emeil">Ваш e-mail</label>
+                            <input id="input-emeil" class="form__input" type="text" name="input-emeil" placeholder="Введите Ваш e-mail">
+                        </div>
+
+                        <div class="form__group">
+                            <label class="form__label" for="input-emeil">Напишите мне</label>
+                            <textarea name="input-text" id="input-text" class="form__textarea" type="text" placeholder="Введите текст..."></textarea>
+                        </div>
+
+                        <div class="text-center">
+                            <button type="submit" class="btn">Отправить</button>
+                        </div>
+
+                    </form>
+
+
+                </div>
+
+                <!--contact__left-->
+            </div>
+            <!--contact-->
+
+        </div>
+        <!--modal__dialog-->
+    </div>
+    <!--modal-->
+
+
+
+
+    <!--JS-->
+    <script src="JS/filter.js"></script>
+    <script src="JS/fixedMenu.js"></script>
+    <script src="JS/modal.js"></script>
+    <script src="JS/burgerMenu.js"></script>
+    <script src="JS/sliderModal.js"></script>
+
+</body>
+
+</html>

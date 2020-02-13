@@ -1,0 +1,152 @@
+//main: ../style.less
+
+.about {
+    margin: 8.4rem 0;
+
+    @media @tablet {
+        margin: 4rem 0;
+    }
+}
+
+.about__inner {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1090px;
+
+}
+
+.about__photo,
+.about__content {
+
+    width: 50%;
+
+    @media @tablet {
+        width: 100%;
+    }
+
+
+}
+
+.about__photo {
+    position: relative;
+
+    img {
+        position: absolute;
+        top: 0;
+        z-index: 2;
+        border-radius: 50%;
+
+        box-shadow: 0 0 25px rgba(102, 16, 189, 0.25);
+
+
+
+        @media @notebook {
+            width: 500px;
+            height: auto;
+        }
+
+        @media @tablet {
+            position: relative;
+
+        }
+
+        @media @mobile {
+            display: none;
+
+        }
+
+
+
+    }
+
+
+
+    @media @tablet {
+        order: 2;
+        left: 20%;
+
+
+
+
+
+
+
+    }
+
+
+
+    @media @mobile {
+        left: 0;
+
+
+
+
+
+    }
+}
+
+.about__content {
+
+    padding-left: 3.2rem;
+
+    @media @tablet {
+        order: 1;
+        padding-left: 0;
+        margin: 0 auto 2rem;
+
+        text-align: center;
+
+        max-width: 800px;
+
+    }
+}
+
+.about__title {
+    font-size: 3rem;
+
+    color:
+        #3f1b71;
+
+    font-weight: 700;
+
+    font-family: 'Marck Script', cursive;
+
+    margin-bottom: 1.5rem;
+
+    @media @notebook {
+        font-size: 2.5rem;
+
+    }
+
+    @media @mobile {
+        font-size: 2rem;
+    }
+
+}
+
+.about__bigtitle {
+    text-transform: uppercase;
+    position: relative;
+    left: -10px;
+    font-size: 6.1rem;
+    line-height: 1.1;
+    margin-bottom: 1.4rem;
+    font-weight: 700;
+    color: fade(@black, 15%);
+
+    @media @notebook {
+        font-size: 4rem;
+    }
+
+    @media @mobile {
+        font-size: 3rem;
+    }
+}
+
+.about__text {
+    font-size: 1rem;
+    color: @gray;
+    line-height: 2;
+    font-weight: 300;
+    margin-bottom: 2.8rem;
+}

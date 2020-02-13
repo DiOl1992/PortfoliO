@@ -1,0 +1,95 @@
+//main: ../style.less
+
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    min-width: 170px;
+    text-align: center;
+    font-size: 1.06rem;
+    color: @black;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid @gray;
+    border-radius: 1.8em;
+    background: none;
+    font-family: inherit;
+    line-height: 1.1;
+    padding: 1em 1.7em;
+    cursor: pointer;
+
+    transition: background-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear, border-color 0.2s linear;
+
+    &:hover {
+        background-color:
+            #412666;
+
+        color:
+            #ffffff;
+
+        box-shadow: 2px 2px 10px rgba(53, 20, 85, 0.24);
+
+        border:
+            #412666;
+    }
+
+    + .btn {
+        margin-left: 1rem;
+    }
+}
+
+/*modificators*/
+
+.btn--footer{
+    color: @white;
+    border-color: @white;
+}
+
+.btn--sm {
+    min-width: 0;
+    padding: 0.7em 1.1em;
+    font-size: 0.94rem;
+    font-weight: 500;
+
+    border-width: 1px;
+    border-color: @black;
+
+}
+
+btn--thin {
+    min-width: 145px;
+    font-size: 0.8rem;
+}
+
+
+@media @tablet {
+    .btn {
+        font-size: 1rem;
+        min-width: 150px;
+        padding: 1em 1.5em;
+    }
+}
+
+@media @mobile-sm {
+    .btn {
+        display: block;
+        width: 100%;
+
+        + .btn {
+            margin-left: 0;
+            margin-top: 1rem;
+        }
+    }
+}
+
+
+#btn-forward,
+#btn-back,
+.btn-forward,
+.btn-back{
+    border: none;
+
+    background: none;
+    font-size: 1.2rem;
+    color:#574b4b;
+    cursor: pointer;
+}

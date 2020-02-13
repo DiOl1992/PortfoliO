@@ -1,0 +1,50 @@
+//main: ../style.less
+
+.works {
+    margin: 2.8rem 0;
+}
+
+.works__nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.4rem;
+    
+     @media @mobile-sm {
+        flex-direction: column;
+        text-align: center;
+         
+    }
+}
+
+.works__nav-link {
+    margin: 0 1.2rem;
+
+    font-size: 1.5rem;
+
+    color:
+        rgb(72, 31, 111);
+
+    text-decoration: none;
+
+    text-transform: uppercase;
+
+    &:hover {
+        text-decoration: underline;
+    }
+    
+    
+    @media @900 {
+        font-size: 1.2rem;
+    }
+    
+     @media @720 {
+        font-size: 1rem;
+         margin: 0 0.8rem;
+    }
+    
+    
+}
+
+.work__cat{
+    display: none;
+}
